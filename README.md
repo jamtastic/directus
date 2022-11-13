@@ -28,7 +28,9 @@ These extensions work best as a suite of plugins, usually to provide integration
 
 > Modules are completely open-ended components that provide new experiences within the Directus platform. [Learn more about Modules](https://docs.directus.io/extensions/modules.html).
 
-> **Note:** *Jamtastic!* does NOT currently maintain any custom standalone modules, however some are provided as part of the integration packages.
+> **Note**
+> 
+> *Jamtastic!* does NOT currently maintain any custom standalone modules, however some are provided as part of the integration packages.
 
 * **Layouts**
   * **Nested** — Similar to the table view, except can be organised into nested groups
@@ -48,6 +50,8 @@ These extensions work best as a suite of plugins, usually to provide integration
 
 > Panels are modular units of data visualization that exist within the [Insights module](https://docs.directus.io/app/insights.html). Each panel exists within a Dashboard and can be positioned and resized as needed. [Learn more about Panels](https://docs.directus.io/extensions/panels.html).
 
-> **Note:** *Jamtastic!* does NOT currently maintain any custom panels.
+> **Note**
+> 
+> *Jamtastic!* does NOT currently maintain any custom panels.
 
 ### API
