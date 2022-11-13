@@ -3,7 +3,13 @@ A collection of Directus plugins we created and maintain at Jamtastic!
 
 ## 🐰 &nbsp; Directus
 
-Directus is an open-source data management system.
+Directus is an open-source data management system. To quote the source:
+
+> **Directus is an Open Data Platform built to democratize the database.**
+> 
+> This platform provides everyone on your team, regardless of technical skill, equal access to data and digital file asset management, for any data model or project. First, link Directus to your desired SQL database and file storage adapter. After that, Directus enables you to perform CRUD operations, create users, assign roles with fully configurable permissions, build complex and granular queries, configure event-driven webhooks and task automation... the list goes on!
+
+
 
 ## 🧩 &nbsp; Extensions
 
@@ -24,7 +30,9 @@ These extensions work best as a suite of plugins, usually to provide integration
 
 ### App
 
-<details><summary><strong>Modules</strong></summary><br />
+<details><summary><strong>View the app extensions we manage</strong></summary><br />
+
+<details><summary><strong>Modules</strong><div style="float:right"><a href="./source/modules/README.me">More information</a></div></summary><br />
 
 > Modules are completely open-ended components that provide new experiences within the Directus platform. [Learn more about Modules](https://docs.directus.io/extensions/modules.html).
 
@@ -61,6 +69,8 @@ These extensions work best as a suite of plugins, usually to provide integration
 > **Note**
 > 
 > *Jamtastic!* does NOT currently maintain any custom panels.
+
+</details>
 
 </details>
 
