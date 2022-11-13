@@ -24,7 +24,7 @@ These extensions work best as a suite of plugins, usually to provide integration
 
 ### App
 
-**Modules**
+<details><summary><strong>Modules</strong></summary><br />
 
 > Modules are completely open-ended components that provide new experiences within the Directus platform. [Learn more about Modules](https://docs.directus.io/extensions/modules.html).
 
@@ -32,26 +32,36 @@ These extensions work best as a suite of plugins, usually to provide integration
 > 
 > *Jamtastic!* does NOT currently maintain any custom standalone modules, however some are provided as part of the integration packages.
 
-* **Layouts**
-  * **Nested** — Similar to the table view, except can be organised into nested groups
-* **Interfaces**
-  * **Embedded** — embed music, video, gifs, social media and more from external services
-  * **Monaco** — alternative code editor to built in option; based on Monaco
-  * **Sentiment** — Rating feedback on a Likert scale
+</details>
+<details><summary><strong>Layouts</strong></summary><br />
 
-**Displays**
+* **Nested** — Similar to the table view, except can be organised into nested groups
+
+
+</details>
+<details><summary><strong>Interfaces</strong></summary><br />
+
+* **Embedded** — embed music, video, gifs, social media and more from external services
+* **Monaco** — alternative code editor to built in option; based on Monaco
+* **Sentiment** — Rating feedback on a Likert scale
+
+</details>
+<details><summary><strong>Displays</strong></summary><br />
 
 > Displays are small inline components that provide new ways of viewing field values throughout a Directus App. [Learn more about Displays](https://docs.directus.io/extensions/displays.html).
 
 * **Sentiment** — Rating feedback on a Likert scale
 * **Shields** — Badges powered by shields.io
 
-**Panels**
+</details>
+<details><summary><strong>Panels</strong></summary><br />
 
 > Panels are modular units of data visualization that exist within the [Insights module](https://docs.directus.io/app/insights.html). Each panel exists within a Dashboard and can be positioned and resized as needed. [Learn more about Panels](https://docs.directus.io/extensions/panels.html).
 
 > **Note**
 > 
 > *Jamtastic!* does NOT currently maintain any custom panels.
+
+</details>
 
 ### API
