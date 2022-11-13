@@ -32,7 +32,7 @@ These extensions work best as a suite of plugins, usually to provide integration
 
 <details><summary><strong>View the app extensions we manage</strong></summary><br />
 
-<details><summary><strong>Modules</strong><div align="right"><a href="./source/modules/README.me">More information</a></div></summary><br />
+<details><summary><strong>Modules</strong><span align="right"><a href="./source/modules/README.me">More information</a></span></summary><br />
 
 > Modules are completely open-ended components that provide new experiences within the Directus platform. [Learn more about Modules](https://docs.directus.io/extensions/modules.html).
 
