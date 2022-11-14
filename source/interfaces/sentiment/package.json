@@ -1,0 +1,38 @@
+{
+	"name": "@jamtastic/directus-extension-sentiment",
+	"version": "0.6.0",
+	"description": "Quantitative sentiment rating interface for Directus",
+	"license": "ISC",
+	"author": "Jamtastic! (https://jamtastic.dev/)",
+	"contributors": [
+		"Benny Michaels <foss@bnry.be> (https://bnry.be/)"
+	],
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-custom-interface",
+		"sentiment",
+		"feedback",
+		"rating"
+	],
+	"homepage": "https://github.com/jamtastic/directus/source/interfaces/sentiment#readme",
+  "bugs": {
+    "url": "https://github.com/jamtastic/directus/issues"
+  },
+	"files": [ "dist" ],
+	"directus:extension": {
+		"type": "interface",
+		"path": "dist/sentiment.js",
+		"source": "source/sentiment.ts",
+		"host": "^9.20.4"
+	},
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "9.20.4",
+		"typescript": "^4.8.4",
+		"vue": "^3.2.45"
+	}
+}
