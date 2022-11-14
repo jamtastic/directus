@@ -1,0 +1,31 @@
+{
+  "workbench.colorCustomizations": {
+    "sash.hoverBorder": "#b099ff",
+    "statusBar.background": "#8866ff",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#6033ff",
+    "statusBarItem.remoteBackground": "#8866ff",
+    "statusBarItem.remoteForeground": "#15202b"
+  },
+  "peacock.color": "#8866ff",
+  "cSpell.words": [
+    "directus",
+    "jamtastic",
+    "Likert",
+    "MJML"
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    ".vscode": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true,
+    "**/.gitignore": true
+  },
+  "explorerExclude.backup": {}
+}
