@@ -1,0 +1,45 @@
+{
+	"name": "directus-extension-diagrams",
+	"version": "0.4.0",
+	"description": "Integration of Diagrams.net tooling into Directus",
+	"license": "ISC",
+	"author": "Jamtastic! (https://jamtastic.dev/)",
+	"contributors": [
+		"Benny Michaels <foss@bnry.be> (https://bnry.be/)"
+	],
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-custom-bundle",
+		"diagramming",
+		"diagrams.net",
+		"drawio",
+		"uml",
+		"flowcharts",
+		"swimlane",
+		"entity relationship"
+	],
+	"homepage": "https://github.com/jamtastic/directus/source/bundles/diagrams#readme",
+  "bugs": {
+    "url": "https://github.com/jamtastic/directus/issues"
+  },
+	"files": [ "dist" ],
+	"directus:extension": {
+		"type": "bundle",
+		"path": {
+			"app": "dist/app.js",
+			"api": "dist/api.js"
+		},
+		"entries": [],
+		"host": "^9.21.0"
+	},
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "9.21.0",
+		"typescript": "^4.9.3",
+		"vue": "^3.2.45"
+	}
+}
