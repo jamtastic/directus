@@ -21,3 +21,5 @@ Coming soon
 ## Contributing
 
 Coming soon
+
+<!-- https://www.theseobar.com/blog/url-slug-best-practices/ -->
