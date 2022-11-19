@@ -75,3 +75,27 @@ These extensions work best as a suite of plugins, usually to provide integration
 </details>
 
 ### API
+
+## 🔍 &nbsp; Resources
+
+### References
+
+* Official Documentation
+* [Unofficial documentation](https://github.com/directus/directus/wiki/app-components)[^unofficial]
+
+[^unofficial]: This is the documentation for internal app components which are reused in our own extensions as well. However, according to the team: [they] do not consider internal-API changes in the components as a breaking change of Directus.
+### Third-party extensions
+
+The Directus ecosystem is supported by a growing list of fantastic contributors. For an up to date list of contributions, check out the official [Awesome Directus List](https://github.com/directus-community/awesome-directus).
+
+Some of the extensions we either use of have been inspired by are listed below.
+
+* **Adrian Dimitrov** — [GitHub](https://github.com/dimitrov-adrian)
+  * [M2M Tags](https://github.com/dimitrov-adrian/directus-extension-tags-m2m-interface)
+  * [WP Slug](https://github.com/dimitrov-adrian/directus-extension-wpslug-interface) — alternative to our permalink interface
+  * [Search Sync](https://github.com/dimitrov-adrian/directus-extension-searchsync)
+* **Gerard Lamusse** — [GitHub](https://github.com/u12206050)
+  * [API Viewer](https://github.com/u12206050/directus-extension-api-viewer-module)
+  * [Role Selector](https://github.com/u12206050/directus-extension-role-chooser)
+  * [Global Search](https://github.com/u12206050/directus-extension-global-search)
+  * [Date Picker](https://github.com/u12206050/directus-9-date-picker-interface)
