@@ -31,8 +31,8 @@
 		"dev": "directus-extension build -w --no-minify"
 	},
 	"devDependencies": {
-		"@directus/extensions-sdk": "9.20.4",
-		"typescript": "^4.8.4",
+		"@directus/extensions-sdk": "9.21.0",
+		"typescript": "^4.9.3",
 		"vue": "^3.2.45"
 	}
 }
