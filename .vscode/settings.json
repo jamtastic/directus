@@ -10,9 +10,11 @@
   "peacock.color": "#4422dd",
   "cSpell.words": [
     "directus",
+    "drawio",
     "jamtastic",
     "Likert",
-    "MJML"
+    "MJML",
+    "oclif"
   ],
   "files.exclude": {
     "**/.git": true,
