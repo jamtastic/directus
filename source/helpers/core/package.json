@@ -22,9 +22,12 @@
   ],
   "main": "dist/index.js",
   "scripts": {
+    "build": "shx rm -rf dist && tsc -b && tsc -d",
+    "prepack": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "shx": "^0.3",
     "typescript": "^4.9.3"
   }
 }
