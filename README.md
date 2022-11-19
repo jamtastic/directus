@@ -1,15 +1,30 @@
-# directus
-A collection of Directus plugins we created and maintain at Jamtastic!
+> **Note**: This is not the greatest Open Data Platform in the world, no. This is just a tribute. [**Go here for the official Directus project.**](https://github.com/directus/directus)
 
-## 🐰 &nbsp; Directus
+<br /><br /><div align="center">
+
+<img alt="Directus Logo" src="https://user-images.githubusercontent.com/522079/158864859-0fbeae62-9d7a-4619-b35e-f8fa5f68e0c8.png">
+
+
+<br /><br />
+
+![ISC License](https://img.shields.io/badge/license-ISC-green?style=for-the-badge) &nbsp; ![Project Status](https://img.shields.io/badge/status-🚧%20WIP-yellow?style=for-the-badge)
+
+<strong>A collection of [Directus](https://directus.io/) plugins and tools maintained by the *Jamtastic!*&nbsp; team</strong><br />
+<sub>Help us expand the Directus ecosystem by contributing to this collection of unofficial, but professional quality, extensions.</sub>
+
+<br /></div>
+
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## 🐰 &nbsp; Directus?
 
 Directus is an open-source data management system. To quote the source:
 
 > **Directus is an Open Data Platform built to democratize the database.**
-> 
+>
 > This platform provides everyone on your team, regardless of technical skill, equal access to data and digital file asset management, for any data model or project. First, link Directus to your desired SQL database and file storage adapter. After that, Directus enables you to perform CRUD operations, create users, assign roles with fully configurable permissions, build complex and granular queries, configure event-driven webhooks and task automation... the list goes on!
 
-
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## 🧩 &nbsp; Extensions
 
@@ -67,7 +82,7 @@ These extensions work best as a suite of plugins, usually to provide integration
 > Panels are modular units of data visualization that exist within the [Insights module](https://docs.directus.io/app/insights.html). Each panel exists within a Dashboard and can be positioned and resized as needed. [Learn more about Panels](https://docs.directus.io/extensions/panels.html).
 
 > **Note**
-> 
+>
 > *Jamtastic!* does NOT currently maintain any custom panels.
 
 </details>
@@ -75,6 +90,54 @@ These extensions work best as a suite of plugins, usually to provide integration
 </details>
 
 ### API
+
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## 🛠 &nbsp; Tools
+
+This project includes some tools and utilities to help maintain Directus extensions.
+
+### Bunny CLI
+
+To develop Directus extensions with `bunny`:
+
+```shell
+$ npm install -g @jamtastic/bunny
+$ bunny start
+```
+
+To develop `bunny`:
+
+```shell
+$ git clone https://github.com/jamtastic/directus
+$ cd directus
+$ npm i && npm link
+$ bunny help
+```
+
+### Helpers
+
+Install the helpers into your Directus project:
+
+```shell
+$ npm i @jamtastic/directus
+```
+
+Inside of a migration file in the project:
+
+```typescript
+import { knex } from 'knex'
+import Directus from '@jamtastic/directus'
+
+export const up = async (knex: Knex) => {
+  const directus = new Directus.SchemaBuilder(knex)
+  directus.createCollection({
+    // ...
+  })
+}
+```
+
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## 🔍 &nbsp; Resources
 
