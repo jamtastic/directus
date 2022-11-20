@@ -9,12 +9,16 @@
   },
   "peacock.color": "#4422dd",
   "cSpell.words": [
+    "Dimitrov",
     "directus",
     "drawio",
     "jamtastic",
+    "Lamusse",
     "Likert",
     "MJML",
-    "oclif"
+    "npmjs",
+    "oclif",
+    "ryntab"
   ],
   "files.exclude": {
     "**/.git": true,
