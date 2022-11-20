@@ -1,4 +1,4 @@
-> **Note**: This is not the greatest Open Data Platform in the world, no. This is just a tribute. [**Go here for the official Directus project.**](https://github.com/directus/directus)
+> **Note**: This is not the greatest Open Data Platform in the world, no. This is just a tribute. Looking for the official Directus project instead? [**Check it out here.**](https://github.com/directus/directus)
 
 <br /><br /><div align="center">
 
@@ -10,7 +10,7 @@
 ![ISC License](https://img.shields.io/badge/license-ISC-green?style=for-the-badge) &nbsp; ![Project Status](https://img.shields.io/badge/status-🚧%20WIP-yellow?style=for-the-badge)
 
 <strong>A collection of [Directus](https://directus.io/) plugins and tools maintained by the *Jamtastic!*&nbsp; team</strong><br />
-<sub>Help us expand the Directus ecosystem by contributing to this collection of unofficial, but professional quality, extensions.</sub>
+<sub>Help us expand the Directus ecosystem by contributing to this collection of unofficial, professional grade extensions.</sub>
 
 <br /></div>
 
@@ -28,21 +28,50 @@ Directus is an open-source data management system. To quote the source:
 
 ## 🧩 &nbsp; Extensions
 
-Extensions maintained by *Jamtastic!* are categorised into three broad categories: integration extensions, [app extensions](https://docs.directus.io/extensions/introduction.html#app-extensions) and [API extensions](https://docs.directus.io/extensions/introduction.html#api-extensions).
+Extensions maintained by *Jamtastic!* are categorised into two main categories: integration and standalone extensions.
 
-### Integrations
+### Integration bundles
 
-These extensions work best as a suite of plugins, usually to provide integration of an external service.
+Integrations use the bundle extension type and package a number of standalone extensions that work together to either add new experiences, or to integrate other tools into the Directus installation.
 
-* [**Diagrams.net**](https://www.diagrams.net/)
-  * Interface
-  * Display
-* EditorJS
-  * Module
-  * Interface
-  * Display
-* MJML
+* **Access** - advanced role based permissions with support for groups and resource owner based permissions
+* **Diagrams** - based on [Diagrams.net](https://www.diagrams.net/)
+* **Editor** - advanced editorial workflow for prose based on EditorJS
+* **Mailer** - Send and trigger emails using the internal mailer and manage templates using an MJML editor
+* **Notifier** - Integrations with communication platforms (e.g. Slack) to receive system notifications and to trigger events remotely
 
+<!-- * Bookings -->
+<!-- * Inventory -->
+
+### Standalone extensions
+
+These extensions are either [app extensions](https://docs.directus.io/extensions/introduction.html#app-extensions) or [API extensions](https://docs.directus.io/extensions/introduction.html#api-extensions) that work by themselves. Some may have recommended counterparts - for example, an interface might work well with another display extension.
+
+**App**
+
+* Modules
+  * *None planned yet* 😢
+* Layouts
+  * **Nested**
+* Interfaces
+  * **Embedded**
+  * **Header**
+  * **Monaco**
+  * **Permalink**
+  * **Sentiment**
+* Display
+  * Icon
+* Panels
+  * *None planned yet* 😢
+
+**API**
+
+* Endpoints
+* Hooks
+* Models (migrations)
+
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+<!-- 
 ### App
 
 <details><summary><strong>View the app extensions we manage</strong></summary><br />
@@ -91,7 +120,7 @@ These extensions work best as a suite of plugins, usually to provide integration
 
 ### API
 
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png) -->
 
 ## 🛠 &nbsp; Tools
 
@@ -143,7 +172,7 @@ export const up = async (knex: Knex) => {
 
 ### References
 
-* Official Documentation
+* [Official Documentation](https://docs.directus.io/)
 * [Unofficial documentation](https://github.com/directus/directus/wiki/app-components)[^unofficial]
 
 [^unofficial]: This is the documentation for internal app components which are reused in our own extensions as well. However, according to the team: [they] do not consider internal-API changes in the components as a breaking change of Directus.
@@ -151,14 +180,19 @@ export const up = async (knex: Knex) => {
 
 The Directus ecosystem is supported by a growing list of fantastic contributors. For an up to date list of contributions, check out the official [Awesome Directus List](https://github.com/directus-community/awesome-directus).
 
-Some of the extensions we either use of have been inspired by are listed below.
+Some of the extensions we either use or have been inspired by are listed below.
 
 * **Adrian Dimitrov** — [GitHub](https://github.com/dimitrov-adrian)
   * [M2M Tags](https://github.com/dimitrov-adrian/directus-extension-tags-m2m-interface)
   * [WP Slug](https://github.com/dimitrov-adrian/directus-extension-wpslug-interface) — alternative to our permalink interface
   * [Search Sync](https://github.com/dimitrov-adrian/directus-extension-searchsync)
+  * [Group Modal](https://github.com/dimitrov-adrian/directus-extension-group-modal-interface)
+  * [EditorJS](https://github.com/dimitrov-adrian/directus-extension-editorjs-interface) — partial inspiration for our editorial workflow
 * **Gerard Lamusse** — [GitHub](https://github.com/u12206050)
   * [API Viewer](https://github.com/u12206050/directus-extension-api-viewer-module)
   * [Role Selector](https://github.com/u12206050/directus-extension-role-chooser)
   * [Global Search](https://github.com/u12206050/directus-extension-global-search)
   * [Date Picker](https://github.com/u12206050/directus-9-date-picker-interface)
+* **Others**
+  * [Display Link](https://github.com/jacoborus/directus-extension-display-link) by [@jacoborus](https://github.com/jacoborus/) — recommended counterpart to our permalink interface.
+  * [Mailer](https://github.com/ryntab/Directus-Mailer) by [@ryntab](https://github.com/ryntab) — partial inspiration for our own mailer workflow
