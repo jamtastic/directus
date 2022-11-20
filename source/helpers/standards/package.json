@@ -1,0 +1,62 @@
+{
+  "name": "@jamtastic/directus-standardish",
+  "version": "0.9.0",
+  "description": "Shareable code standards for Directus extensions",
+  "author": "Jamtastic! (https://jamtastic.dev/)",
+  "license": "UNLICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jamtastic/directus.git",
+    "directory": "source/helpers/standards"
+  },
+  "bugs": {
+    "url": "https://github.com/jamtastic/directus/issues"
+  },
+  "homepage": "https://github.com/jamtastic/directus/blob/release/source/standards#readme",
+  "keywords": [
+    "directus",
+    "stylelint",
+    "stylelint-config",
+    "prettier",
+    "prettier-config",
+    "eslint",
+    "eslint-config"
+  ],
+  "files": [
+    ".prettierrc",
+    ".stylelintrc"
+  ],
+  "exports": {
+    "./prettier": {
+      "import": "./.prettierrc",
+      "require": "./.prettierrc"
+    },
+    "./stylelint": {
+      "import": "./.stylelintrc",
+      "require": "./.stylelintrc"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@jamtastic/eslint-config-directus": "^0.9.0",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "stylelint-config-html": "^1.0.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.1.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 3",
+    "prettier": ">= 2",
+    "stylelint": ">= 14",
+    "typescript": ">= 4"
+  }
+}
