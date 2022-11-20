@@ -57,8 +57,8 @@ These extensions are either [app extensions](https://docs.directus.io/extensions
   * **Embedded**
   * **Header**
   * **Monaco**
-  * **Permalink**
-  * **Sentiment**
+  * **Permalink** &nbsp; <a href="//www.npmjs.com/package/@jamtastic/directus-extension-permalink" target="_blank"><img src="https://img.shields.io/npm/v/@jamtastic/directus-extension-permalink?logo=npm" height="18px"/></a>
+  * **Sentiment** &nbsp; <a href="//www.npmjs.com/package/@jamtastic/directus-extension-sentiment" target="_blank"><img src="https://img.shields.io/npm/v/@jamtastic/directus-extension-sentiment?logo=npm" height="18px"/></a>
 * Display
   * Icon
 * Panels
@@ -194,5 +194,5 @@ Some of the extensions we either use or have been inspired by are listed below.
   * [Global Search](https://github.com/u12206050/directus-extension-global-search)
   * [Date Picker](https://github.com/u12206050/directus-9-date-picker-interface)
 * **Others**
-  * [Display Link](https://github.com/jacoborus/directus-extension-display-link) by [@jacoborus](https://github.com/jacoborus/) — recommended counterpart to our permalink interface.
+  * [Display Link](https://github.com/jacoborus/directus-extension-display-link) by [@jacobus](https://github.com/jacoborus/) — recommended counterpart to our permalink interface.
   * [Mailer](https://github.com/ryntab/Directus-Mailer) by [@ryntab](https://github.com/ryntab) — partial inspiration for our own mailer workflow
