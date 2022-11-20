@@ -9,7 +9,7 @@ A Directus interface extension that allows quantifiable sentiments (star ratings
 In the root of your Directus project ...
 
 ```shell
-$ npm install @jamtastic/directus-extensions-sentiment
+$ npm install @jamtastic/directus-extension-sentiment
 ```
 
 ... and restart Directus!
