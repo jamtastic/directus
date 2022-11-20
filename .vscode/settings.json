@@ -12,13 +12,17 @@
     "Dimitrov",
     "directus",
     "drawio",
+    "esbenp",
     "jamtastic",
     "Lamusse",
     "Likert",
     "MJML",
     "npmjs",
     "oclif",
-    "ryntab"
+    "ryntab",
+    "stylelintrc",
+    "vars",
+    "Vetur"
   ],
   "files.exclude": {
     "**/.git": true,
