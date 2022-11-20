@@ -10,7 +10,7 @@ export default defineInterface({
 	component: PermalinkInterface,
 	types: ['string', 'text'],
 	group: 'standard',
-	recommendedDisplays: ['rating'],
+	recommendedDisplays: ['extension-display-link'],
 	options: ({ field }) => {
 		const opts: { standard: DeepPartial<Field>[]; advanced: DeepPartial<Field>[] } = {
 			standard: [
