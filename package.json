@@ -17,6 +17,7 @@
     "source/displays/*",
     "source/endpoints/*",
     "source/helpers/*",
+    "source/helpers/standards/eslint",
     "source/hooks/*",
     "source/interfaces/*",
     "source/layouts/*",
@@ -24,18 +25,27 @@
     "source/modules/*",
     "source/panels/*"
   ],
+  "prettier": "@jamtastic/directus-standardish/prettier",
+  "stylelint": {
+    "extends": "@jamtastic/directus-standardish/stylelint"
+  },
+  "eslintConfig": {
+    "extends": "@jamtastic/eslint-config-directus"
+  },
   "scripts": {
     "build": "npm run build -ws --if-present",
     "dev": "npm run dev -ws --if-present",
+    "lint": "npm run lint -ws --if-present",
     "test": "npm run test -ws --if-present"
   },
   "devDependencies": {
     "@directus/extensions-sdk": "^9.21",
+    "@jamtastic/directus-standardish": "^0.9.0",
     "directus": "^9.21",
     "knex": "^2.3.0",
-    "sqlite3": "^5",
     "shx": "^0.3",
+    "sqlite3": "^5",
     "typescript": "^4.9.3",
-		"vue": "^3.2.45"
+    "vue": "^3.2.45"
   }
 }
