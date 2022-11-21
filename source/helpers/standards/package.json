@@ -39,19 +39,19 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
+  "devDependencies": {
     "@jamtastic/eslint-config-directus": "^0.9.0",
-    "@typescript-eslint/eslint-plugin": "^5.9.0",
-    "@typescript-eslint/parser": "^5.9.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^8.2.0",
-    "stylelint-config-html": "^1.0.0",
-    "stylelint-config-prettier": "^9.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^8.7.1",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^24.0.0",
     "stylelint-order": "^5.0.0",
-    "stylelint-scss": "^4.1.0"
+    "stylelint-scss": "^4.3.0"
   },
   "peerDependencies": {
     "eslint": ">= 3",
