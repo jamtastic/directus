@@ -23,13 +23,13 @@
     "eslint-config"
   ],
   "files": [
-    ".prettierrc",
+    ".prettierrc.js",
     ".stylelintrc"
   ],
   "exports": {
     "./prettier": {
-      "import": "./.prettierrc",
-      "require": "./.prettierrc"
+      "import": "./.prettierrc.js",
+      "require": "./.prettierrc.js"
     },
     "./stylelint": {
       "import": "./.stylelintrc",
