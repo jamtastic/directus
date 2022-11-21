@@ -1,16 +1,7 @@
 const defaultRules = {
   'no-console': process.env.NODE_ENV !== 'development' ? 'error' : 'off',
   'no-debugger': process.env.NODE_ENV !== 'development' ? 'error' : 'off',
-  'prettier/prettier': [
-    'error',
-    {
-      htmlWhitespaceSensitivity: 'ignore',
-      printWidth: 120,
-      singleQuote: true,
-      semi: false,
-      vueIndentScriptAndStyle: true,
-    },
-  ],
+  'prettier/prettier': 'error',
   semi: ['error', 'never'],
   'max-len': ['error', { code: 120 }],
   'no-multiple-empty-lines': 'error',
