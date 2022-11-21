@@ -28,17 +28,15 @@
     "host": "^9.20.4"
   },
   "scripts": {
-    "prebuild": "npm run lint",
     "build": "directus-extension build",
-    "fix": "npm run fix:code && npm run fix:code && npm run fix:style",
-    "fix:code": "eslint **/*.{vue,ts} --fix",
-    "fix:format": "prettier --write **/*.{vue,ts}",
-    "fix:style": "stylelint **/*.{vue,css,scss,sass}",
     "dev": "directus-extension build -w --no-minify",
-    "lint": "npm run lint:code && npm run lint:code && npm run lint:style",
-    "lint:code": "eslint **/*.{vue,ts}",
-    "lint:format": "prettier **/*.{vue,ts}",
-    "lint:style": "stylelint **/*.{vue,css,scss,sass}"
+    "fix": "npm run lint -- --fix",
+    "format": "prettier **/*.{vue,ts} --write",
+    "lint": "eslint **/*.{vue,ts}",
+    "style": "stylelint \"**/*.{vue,css,scss,sass}\"",
+    "prebuild": "npm run lint",
+    "prelint": "npm run format && npm run style",
+    "prepack": "npm run build"
   },
   "eslintConfig": {
     "extends": "@jamtastic/eslint-config-directus"
