@@ -7,8 +7,8 @@
         <span class="permalink slash">/</span>
       </span>
     </template>
-    <!-- v-if="(percentageRemaining !== null && percentageRemaining <= 20) || iconRight || softLength" -->
     <template #append>
+      <!-- v-if="(percentageRemaining !== null && percentageRemaining <= 20) || iconRight || softLength" -->
       <!-- <span
         v-if="(percentageRemaining !== null && percentageRemaining <= 20) || softLength"
         class="remaining"
@@ -25,7 +25,12 @@
         <v-icon class="action" name="open_in_new" />
       </a>
       <v-icon class="action" name="info" @click="helpPanelActive = true" />
-      <v-icon class="action metric" :class="quality.rating" name="speed" @click="metricPanelActive = true" />
+      <v-icon
+        class="action metric"
+        :class="quality.rating"
+        name="speed"
+        @click="metricPanelActive = true"
+      />
     </template>
   </v-input>
 
@@ -47,6 +52,10 @@
   </v-dialog>
 </template>
 
+<script lang="ts">
+  export default { name: 'PermalinkInterface' }
+</script>
+
 <script setup lang="ts">
   import { computed, ref } from 'vue'
   import { stopwords } from './stopwords'
@@ -62,7 +71,7 @@
     }
   )
 
-  const emit = defineEmits(['input'])
+  defineEmits(['input'])
 
   const helpPanelActive = ref(false)
   const metricPanelActive = ref(false)
