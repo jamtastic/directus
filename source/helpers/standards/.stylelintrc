@@ -7,7 +7,9 @@ plugins:
   - 'stylelint-order'
   - 'stylelint-scss'
 rules:
-  indentation: 2
+  indentation:
+    - 2
+    - baseIndentLevel: 1
   order/order:
     - 'dollar-variables'
     - 'custom-properties'
