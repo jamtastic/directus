@@ -4,16 +4,17 @@
   "description": "See https://npmjs.org/package/@jamtastic/directus-standardish",
   "author": "Jamtastic! (https://jamtastic.dev/)",
   "license": "UNLICENSE",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/jamtastic/directus.git",
     "directory": "source/helpers/standards/eslint"
   },
   "prettier": {
-    "htmlWhitespaceSensitivity": "ignore",
     "singleQuote": true,
     "semi": false
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "peerDependencies": {
     "eslint": ">= 3",
