@@ -35,9 +35,9 @@ $ npm install -D @jamtastic/directus-standardish
 
 Install the following extensions:
 
-- Prettier
-- ESLint
-- Stylelint
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 - Vetur
 - (optional) Vue
 - (optional) VueDX
@@ -66,21 +66,36 @@ Add the following to your `.vscode/settings.json` file in your project:
 
 ## Usage
 
-> **Note**: This process is done automatically for new extensions in [**@jamtastic/directus**](https://github.com/jamtastic/directus) when using the `bunny` CLI.
+> **Note**: This process is done automatically for new extensions in [**@jamtastic/directus**](https://github.com/jamtastic/directus) when using the `bunny new` CLI command.
 
 Add the following to your projects `package.json` file:
 
 ```json
 {
+  "scripts": {
+    "fix": "npm run fix:code && npm run fix:code && npm run fix:style",
+    "fix:code": "eslint",
+    "fix:format": "prettier",
+    "fix:style": "stylelint **/*.{vue,css,scss,sass}",
+    "lint": "npm run lint:code && npm run lint:code && npm run lint:style",
+    "lint:code": "eslint",
+    "lint:format": "prettier",
+    "lint:style": "stylelint **/*.{vue,css,scss,sass}"
+  },
+
+  // ...
+
+  "eslintConfig": {
+    "extends": "@jamtastic/eslint-config-directus"
+  },
   "prettier": "@jamtastic/directus-standardish/prettier",
   "stylelint": {
     "extends": "@jamtastic/directus-standardish/stylelint"
-  },
-  "eslintConfig": {
-    "extends": "@jamtastic/eslint-config-directus"
   }
 }
 ```
+
+### Other options
 
 Using `package.json` is the recommended way to use these config files however you may also extend the configuration by following the docs for each linting tool.
 
