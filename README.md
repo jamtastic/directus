@@ -4,12 +4,11 @@
 
 <img alt="Directus Logo" src="https://user-images.githubusercontent.com/522079/158864859-0fbeae62-9d7a-4619-b35e-f8fa5f68e0c8.png">
 
-
 <br /><br />
 
 ![ISC License](https://img.shields.io/badge/license-ISC-green?style=for-the-badge) &nbsp; ![Project Status](https://img.shields.io/badge/status-🚧%20WIP-yellow?style=for-the-badge)
 
-<strong>A collection of [Directus](https://directus.io/) plugins and tools maintained by the *Jamtastic!*&nbsp; team</strong><br />
+<strong>A collection of [Directus](https://directus.io/) plugins and tools maintained by the _Jamtastic!_&nbsp; team</strong><br />
 <sub>Help us expand the Directus ecosystem by contributing to this collection of unofficial, professional grade extensions.</sub>
 
 <br /></div>
@@ -28,17 +27,17 @@ Directus is an open-source data management system. To quote the source:
 
 ## 🧩 &nbsp; Extensions
 
-Extensions maintained by *Jamtastic!* are categorised into two main categories: integration and standalone extensions.
+Extensions maintained by _Jamtastic!_ are categorised into two main categories: integration and standalone extensions.
 
 ### Integration bundles
 
 Integrations use the bundle extension type and package a number of standalone extensions that work together to either add new experiences, or to integrate other tools into the Directus installation.
 
-* **Access** - advanced role based permissions with support for groups and resource owner based permissions
-* **Diagrams** - based on [Diagrams.net](https://www.diagrams.net/)
-* **Editor** - advanced editorial workflow for prose based on EditorJS
-* **Mailer** - Send and trigger emails using the internal mailer and manage templates using an MJML editor
-* **Notifier** - Integrations with communication platforms (e.g. Slack) to receive system notifications and to trigger events remotely
+- **Access** - advanced role based permissions with support for groups and resource owner based permissions
+- **Diagrams** - based on [Diagrams.net](https://www.diagrams.net/)
+- **Editor** - advanced editorial workflow for prose based on EditorJS
+- **Mailer** - Send and trigger emails using the internal mailer and manage templates using an MJML editor
+- **Notifier** - Integrations with communication platforms (e.g. Slack) to receive system notifications and to trigger events remotely
 
 <!-- * Bookings -->
 <!-- * Inventory -->
@@ -49,29 +48,30 @@ These extensions are either [app extensions](https://docs.directus.io/extensions
 
 **App**
 
-* Modules
-  * *None planned yet* 😢
-* Layouts
-  * **Nested**
-* Interfaces
-  * **Embedded**
-  * **Header**
-  * **Monaco**
-  * **Permalink** &nbsp; <a href="//www.npmjs.com/package/@jamtastic/directus-extension-permalink" target="_blank"><img src="https://img.shields.io/npm/v/@jamtastic/directus-extension-permalink?logo=npm" height="18px"/></a>
-  * **Sentiment** &nbsp; <a href="//www.npmjs.com/package/@jamtastic/directus-extension-sentiment" target="_blank"><img src="https://img.shields.io/npm/v/@jamtastic/directus-extension-sentiment?logo=npm" height="18px"/></a>
-* Display
-  * Icon
-* Panels
-  * *None planned yet* 😢
+- Modules
+  - _None planned yet_ 😢
+- Layouts
+  - **Nested** &nbsp; <img src="https://img.shields.io/badge/-🚧%20%20WIP-grey" height="18px"/>
+- Interfaces
+  - **Embedded** &nbsp; <img src="https://img.shields.io/badge/-🚧%20%20WIP-grey" height="18px"/>
+  - **Header** &nbsp; <img src="https://img.shields.io/badge/-🚧%20%20WIP-grey" height="18px"/>
+  - **Monaco** &nbsp; <img src="https://img.shields.io/badge/-🚧%20%20WIP-grey" height="18px"/>
+  - **Permalink** &nbsp; <a href="//www.npmjs.com/package/@jamtastic/directus-extension-permalink" target="_blank"><img src="https://img.shields.io/npm/v/@jamtastic/directus-extension-permalink?logo=npm&label=Permalink" height="18px"/></a>
+  - **Sentiment** &nbsp; <a href="//www.npmjs.com/package/@jamtastic/directus-extension-sentiment" target="_blank"><img src="https://img.shields.io/npm/v/@jamtastic/directus-extension-sentiment?logo=npm&label=Sentiment" height="18px"/></a>
+- Display
+  - Icon
+- Panels
+  - _None planned yet_ 😢
 
 **API**
 
-* Endpoints
-* Hooks
-* Models (migrations)
+- Endpoints
+- Hooks
+- Models (migrations)
 
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-<!-- 
+
+<!--
 ### App
 
 <details><summary><strong>View the app extensions we manage</strong></summary><br />
@@ -81,7 +81,7 @@ These extensions are either [app extensions](https://docs.directus.io/extensions
 > Modules are completely open-ended components that provide new experiences within the Directus platform. [Learn more about Modules](https://docs.directus.io/extensions/modules.html).
 
 > **Note**
-> 
+>
 > *Jamtastic!* does NOT currently maintain any custom standalone modules, however some are provided as part of the integration packages.
 
 </details>
@@ -155,15 +155,15 @@ $ npm i @jamtastic/directus
 Inside of a migration file in the project:
 
 ```typescript
-import { knex } from 'knex'
-import Directus from '@jamtastic/directus'
+import { knex } from "knex";
+import Directus from "@jamtastic/directus";
 
 export const up = async (knex: Knex) => {
-  const directus = new Directus.SchemaBuilder(knex)
+  const directus = new Directus.SchemaBuilder(knex);
   directus.createCollection({
     // ...
-  })
-}
+  });
+};
 ```
 
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -172,27 +172,28 @@ export const up = async (knex: Knex) => {
 
 ### References
 
-* [Official Documentation](https://docs.directus.io/)
-* [Unofficial documentation](https://github.com/directus/directus/wiki/app-components)[^unofficial]
+- [Official Documentation](https://docs.directus.io/)
+- [Unofficial documentation](https://github.com/directus/directus/wiki/app-components)[^unofficial]
 
 [^unofficial]: This is the documentation for internal app components which are reused in our own extensions as well. However, according to the team: [they] do not consider internal-API changes in the components as a breaking change of Directus.
+
 ### Third-party extensions
 
 The Directus ecosystem is supported by a growing list of fantastic contributors. For an up to date list of contributions, check out the official [Awesome Directus List](https://github.com/directus-community/awesome-directus).
 
 Some of the extensions we either use or have been inspired by are listed below.
 
-* **Adrian Dimitrov** — [GitHub](https://github.com/dimitrov-adrian)
-  * [M2M Tags](https://github.com/dimitrov-adrian/directus-extension-tags-m2m-interface)
-  * [WP Slug](https://github.com/dimitrov-adrian/directus-extension-wpslug-interface) — alternative to our permalink interface
-  * [Search Sync](https://github.com/dimitrov-adrian/directus-extension-searchsync)
-  * [Group Modal](https://github.com/dimitrov-adrian/directus-extension-group-modal-interface)
-  * [EditorJS](https://github.com/dimitrov-adrian/directus-extension-editorjs-interface) — partial inspiration for our editorial workflow
-* **Gerard Lamusse** — [GitHub](https://github.com/u12206050)
-  * [API Viewer](https://github.com/u12206050/directus-extension-api-viewer-module)
-  * [Role Selector](https://github.com/u12206050/directus-extension-role-chooser)
-  * [Global Search](https://github.com/u12206050/directus-extension-global-search)
-  * [Date Picker](https://github.com/u12206050/directus-9-date-picker-interface)
-* **Others**
-  * [Display Link](https://github.com/jacoborus/directus-extension-display-link) by [@jacobus](https://github.com/jacoborus/) — recommended counterpart to our permalink interface.
-  * [Mailer](https://github.com/ryntab/Directus-Mailer) by [@ryntab](https://github.com/ryntab) — partial inspiration for our own mailer workflow
+- **Adrian Dimitrov** — [GitHub](https://github.com/dimitrov-adrian)
+  - [M2M Tags](https://github.com/dimitrov-adrian/directus-extension-tags-m2m-interface)
+  - [WP Slug](https://github.com/dimitrov-adrian/directus-extension-wpslug-interface) — alternative to our permalink interface
+  - [Search Sync](https://github.com/dimitrov-adrian/directus-extension-searchsync)
+  - [Group Modal](https://github.com/dimitrov-adrian/directus-extension-group-modal-interface)
+  - [EditorJS](https://github.com/dimitrov-adrian/directus-extension-editorjs-interface) — partial inspiration for our editorial workflow
+- **Gerard Lamusse** — [GitHub](https://github.com/u12206050)
+  - [API Viewer](https://github.com/u12206050/directus-extension-api-viewer-module)
+  - [Role Selector](https://github.com/u12206050/directus-extension-role-chooser)
+  - [Global Search](https://github.com/u12206050/directus-extension-global-search)
+  - [Date Picker](https://github.com/u12206050/directus-9-date-picker-interface)
+- **Others**
+  - [Display Link](https://github.com/jacoborus/directus-extension-display-link) by [@jacobus](https://github.com/jacoborus/) — recommended counterpart to our permalink interface.
+  - [Mailer](https://github.com/ryntab/Directus-Mailer) by [@ryntab](https://github.com/ryntab) — partial inspiration for our own mailer workflow
