@@ -26,7 +26,7 @@ Shareable linting configuration for Directus extension projects. Designed to fol
 Install the package in your Directus project:
 
 ```shell
-$ npm install -D @jamtastic/directus-standardish
+$ npm install -D @jamtastic/directus
 ```
 
 **Configure your editor**
@@ -86,9 +86,9 @@ Add the following to your projects `package.json` file:
   "eslintConfig": {
     "extends": "@jamtastic/eslint-config-directus"
   },
-  "prettier": "@jamtastic/directus-standardish/prettier",
+  "prettier": "@jamtastic/directus/prettier",
   "stylelint": {
-    "extends": "@jamtastic/directus-standardish/stylelint"
+    "extends": "@jamtastic/directus/stylelint"
   }
 }
 ```
@@ -104,6 +104,6 @@ Using the `package.json` file and sticking to the provided config options is the
 
 ```yaml
 extends:
-  - 'jamtastic/directus-standardish/stylelint'
+  - 'jamtastic/directus/stylelint'
 rules: // your overrides here
 ```

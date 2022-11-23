@@ -1,0 +1,4 @@
+{
+  "prettier": "@jamtastic/directus-standardish/prettier",
+  "types": "dist/index.d.ts"
+}
