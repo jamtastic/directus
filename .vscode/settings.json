@@ -9,10 +9,12 @@
   },
   "peacock.color": "#4422dd",
   "cSpell.words": [
+    "consts",
     "Dimitrov",
     "directus",
     "drawio",
     "esbenp",
+    "fqpn",
     "jamtastic",
     "Lamusse",
     "Likert",
