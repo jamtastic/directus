@@ -16,7 +16,7 @@
     "source/bundles/*",
     "source/displays/*",
     "source/endpoints/*",
-    "source/helpers/*",
+    "source/helpers",
     "source/helpers/standards/eslint",
     "source/hooks/*",
     "source/interfaces/*",
