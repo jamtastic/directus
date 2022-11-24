@@ -25,7 +25,8 @@
     "sass",
     "stylelintrc",
     "vars",
-    "Vetur"
+    "Vetur",
+    "Volar"
   ],
   "files.exclude": {
     "**/.git": true,
