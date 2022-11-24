@@ -1,13 +1,18 @@
-import { Command, Flags, Interfaces } from '@oclif/core'
+import { Command, Config /* Interfaces */, Flags } from '@oclif/core'
 
 // Local imports
 import { getRepoPath /* LogLevel */ } from '@jamtastic/directus/shared'
 
-export type Flags<T extends typeof Command> = Interfaces.InferredFlags<
-  typeof BaseCommand['globalFlags'] & T['flags']
->
+/*
+! Something about this does not work
 
-export abstract class BaseCommand<T extends typeof Command> extends Command {
+This is supposed to be a base class (https://oclif.io/docs/base_class)
+but I cannot figure out why global flags defined here are causing errors.
+Help and PRs are very welcome, even if it makes me look like an idiot
+for whatever reason.
+*/
+
+export abstract class BaseCommand extends Command {
   static enableJsonFlag = true
 
   static globalFlags = {
@@ -23,24 +28,23 @@ export abstract class BaseCommand<T extends typeof Command> extends Command {
     }),
   }
 
-  protected flags!: Flags<T>
+  constructor(public argv: string[], public config: Config) {
+    super(argv, config)
+  }
+
+  // protected flags!: Flags<T>
 
   public async init(): Promise<void> {
     await super.init()
-    const { flags } = await this.parse(this.constructor as Interfaces.Command.Class)
-    this.flags = flags
+    //   const { flags } = await this.parse(this.constructor as Interfaces.Command.Class)
+    //   this.flags = flags
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  protected async catch(err: Error & { exitCode?: number }): Promise<any> {
-    // add any custom logic to handle errors from the command
-    // or simply return the parent class error handling
+  protected async catch(err: Error & { exitCode?: number }): Promise<unknown> {
     return super.catch(err)
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  protected async finally(_: Error | undefined): Promise<any> {
-    // called after run and catch regardless of whether or not the command errored
+  protected async finally(_: Error | undefined): Promise<unknown> {
     return super.finally(_)
   }
 }
