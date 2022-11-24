@@ -1,5 +1,5 @@
 import { join } from 'path'
-import config from './config'
+import config from '../bunny/config'
 
 export const getRepoPath = (): string => {
   // Path resolution order:

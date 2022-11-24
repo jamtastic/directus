@@ -1,10 +1,17 @@
 import { create } from '@directus/extensions-sdk/cli'
 import { EXTENSION_PACKAGE_TYPES as OFFICIAL_EXTENSION_PACKAGE_TYPE } from '@directus/shared/constants'
+import { Command, Flags } from '@oclif/core'
 import json from 'jsonfile'
 import { join } from 'path'
-import { BaseCommand, EXTENSION_PACKAGE_TYPES, HELPER_EXTENSION_TYPES } from '../../packages/shared'
 
-export default class NewCommand extends BaseCommand<typeof NewCommand> {
+// Local imports
+import {
+  EXTENSION_PACKAGE_TYPES,
+  getRepoPath,
+  HELPER_EXTENSION_TYPES,
+} from '@jamtastic/directus/shared'
+
+export default class NewCommand extends Command {
   static summary = 'Create a new extension'
   static examples = ['<%= config.bin %> <%= command.id %>']
   static args = [
@@ -20,6 +27,19 @@ export default class NewCommand extends BaseCommand<typeof NewCommand> {
       description: 'Name of the new extension',
     },
   ]
+
+  static flags = {
+    force: Flags.boolean({
+      char: 'f',
+      helpGroup: 'GLOBAL',
+    }),
+    path: Flags.string({
+      char: 'p',
+      summary: 'Path to root of monorepo project.',
+      default: getRepoPath(),
+      helpGroup: 'GLOBAL',
+    }),
+  }
 
   public async run(): Promise<any> {
     const { args, flags } = await this.parse(NewCommand)

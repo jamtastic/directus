@@ -21,6 +21,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "dist",
+    "paths": {
+      "@jamtastic/directus/cli": ["packages/bunny"],
+      "@jamtastic/directus/database": ["packages/database"],
+      "@jamtastic/directus/shared": ["packages/shared"]
+    },
     "removeComments": true,
     "resolveJsonModule": false,
     "rootDir": ".",

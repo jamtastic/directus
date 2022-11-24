@@ -37,7 +37,7 @@
   ],
   "oclif": {
     "bin": "bunny",
-    "dirname": "cli",
+    "dirname": "helpers",
     "commands": "./dist/commands",
     "plugins": [
       "@oclif/plugin-help"
@@ -72,15 +72,20 @@
       "import": "./packages/standards/.stylelintrc",
       "require": "./packages/standards/.stylelintrc"
     },
+    "./cli": {
+      "import": "./dist/packages/bunny/index.js",
+      "require": "./dist/packages/bunny/index.js",
+      "types": "./dist/packages/bunny/index.d.ts"
+    },
     "./database": {
-      "import": "./dist/database/index.js",
-      "require": "./dist/database/index.js",
-      "types": "./dist/database/index.d.ts"
+      "import": "./dist/packages/database/index.js",
+      "require": "./dist/packages/database/index.js",
+      "types": "./dist/packages/database/index.d.ts"
     },
     "./shared": {
-      "import": "./dist/shared/index.js",
-      "require": "./dist/shared/index.js",
-      "types": "./dist/shared/index.d.ts"
+      "import": "./dist/packages/shared/index.js",
+      "require": "./dist/packages/shared/index.js",
+      "types": "./dist/packages/shared/index.d.ts"
     }
   },
   "eslintConfig": {
