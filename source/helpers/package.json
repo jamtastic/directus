@@ -89,7 +89,11 @@
     }
   },
   "eslintConfig": {
-    "extends": "./packages/standards/eslint/index.js"
+    "extends": "./packages/standards/eslint/index.js",
+    "ignorePatterns": [
+      "**/*.d.ts",
+      "dist/**/*"
+    ]
   },
   "prettier": "@jamtastic/directus/prettier",
   "scripts": {
