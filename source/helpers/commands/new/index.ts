@@ -41,7 +41,7 @@ export default class NewCommand extends Command {
     }),
   }
 
-  public async run(): Promise<any> {
+  public async run(): Promise<void> {
     const { args, flags } = await this.parse(NewCommand)
 
     const type = Object.values(HELPER_EXTENSION_TYPES).includes(args.type)
@@ -64,6 +64,6 @@ export default class NewCommand extends Command {
       })
     }
 
-    return 1
+    this.exit(1)
   }
 }
