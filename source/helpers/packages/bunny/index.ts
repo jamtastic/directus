@@ -1,3 +1,3 @@
 export { run } from '@oclif/core'
 export * from './base'
-export * from './config'
+export { default as config } from './config'

@@ -63,7 +63,5 @@ export default class NewCommand extends Command {
         json.writeFileSync(file, pkg, { spaces: 2 })
       })
     }
-
-    this.exit(1)
   }
 }

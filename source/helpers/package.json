@@ -19,7 +19,7 @@
     "directory": "source/helpers"
   },
   "bin": {
-    "bunny": "./bin/run"
+    "bunny": "./packages/bunny/bin/run"
   },
   "main": "dist/bunny/index.js",
   "keywords": [
@@ -57,7 +57,7 @@
     "url": "https://github.com/jamtastic/directus/issues"
   },
   "files": [
-    "/bin",
+    "/packages/bunny/bin",
     "/dist",
     "/oclif.manifest.json",
     "/packages/standards/.prettierrc.js",
