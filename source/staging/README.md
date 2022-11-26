@@ -1,1 +1,0 @@
-A staging environment for testing extensions during development

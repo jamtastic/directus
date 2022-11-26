@@ -1,0 +1,27 @@
+{
+  "name": "@jamtastic/eslint-config-directus",
+  "version": "0.9.0",
+  "description": "See https://npmjs.org/package/@jamtastic/directus",
+  "author": "Jamtastic! (https://jamtastic.dev/)",
+  "license": "UNLICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jamtastic/directus.git",
+    "directory": "source/helpers/standards/eslint"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">= 3",
+    "@typescript-eslint/eslint-plugin": ">= 5",
+    "@typescript-eslint/parser": ">= 5",
+    "eslint-config-prettier": ">= 8",
+    "eslint-plugin-prettier": ">= 4",
+    "eslint-plugin-vue": ">= 8"
+  }
+}

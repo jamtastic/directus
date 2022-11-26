@@ -16,7 +16,7 @@
     "source/bundles/*",
     "source/displays/*",
     "source/endpoints/*",
-    "source/helpers/*",
+    "source/helpers",
     "source/helpers/standards/eslint",
     "source/hooks/*",
     "source/interfaces/*",
@@ -25,9 +25,9 @@
     "source/modules/*",
     "source/panels/*"
   ],
-  "prettier": "@jamtastic/directus-standardish/prettier",
+  "prettier": "@jamtastic/directus/prettier",
   "stylelint": {
-    "extends": "@jamtastic/directus-standardish/stylelint"
+    "extends": "@jamtastic/directus/stylelint"
   },
   "eslintConfig": {
     "extends": "@jamtastic/eslint-config-directus"
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@directus/extensions-sdk": "^9.21",
-    "@jamtastic/directus-standardish": "^0.9.0",
+    "@jamtastic/directus": "^0.2.0",
     "directus": "^9.21",
     "knex": "^2.3.0",
     "shx": "^0.3",

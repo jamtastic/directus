@@ -1,0 +1,151 @@
+{
+  "name": "@jamtastic/directus",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "version": "0.2.0",
+  "description": "Shareable utilities & code standards for Directus extensions",
+  "license": "ISC",
+  "author": "Jamtastic! (https://jamtastic.dev/)",
+  "maintainers": [
+    "Benny Michaels <foss@bnry.be> (https://bnry.be/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jamtastic/directus.git",
+    "directory": "source/helpers"
+  },
+  "bin": {
+    "bunny": "./packages/bunny/bin/run"
+  },
+  "main": "dist/bunny/index.js",
+  "keywords": [
+    "directus",
+    "oclif",
+    "devops",
+    "utilities",
+    "automation",
+    "stylelint",
+    "stylelint-config",
+    "prettier",
+    "prettier-config",
+    "eslint",
+    "eslint-config"
+  ],
+  "oclif": {
+    "bin": "bunny",
+    "dirname": "helpers",
+    "commands": "./dist/commands",
+    "plugins": [
+      "@oclif/plugin-help"
+    ],
+    "topicSeparator": " ",
+    "topics": {
+      "new": {
+        "description": "Create new extensions for Directus"
+      },
+      "qa": {
+        "description": "Ensure all extensions are high quality"
+      }
+    }
+  },
+  "homepage": "https://github.com/jamtastic/directus",
+  "bugs": {
+    "url": "https://github.com/jamtastic/directus/issues"
+  },
+  "files": [
+    "/packages/bunny/bin",
+    "/dist",
+    "/oclif.manifest.json",
+    "/packages/standards/.prettierrc.js",
+    "/packages/standards/.stylelintrc"
+  ],
+  "exports": {
+    "./prettier": {
+      "import": "./packages/standards/.prettierrc.js",
+      "require": "./packages/standards/.prettierrc.js"
+    },
+    "./stylelint": {
+      "import": "./packages/standards/.stylelintrc",
+      "require": "./packages/standards/.stylelintrc"
+    },
+    "./cli": {
+      "import": "./dist/packages/bunny/index.js",
+      "require": "./dist/packages/bunny/index.js",
+      "types": "./dist/packages/bunny/index.d.ts"
+    },
+    "./database": {
+      "import": "./dist/packages/database/index.js",
+      "require": "./dist/packages/database/index.js",
+      "types": "./dist/packages/database/index.d.ts"
+    },
+    "./shared": {
+      "import": "./dist/packages/shared/index.js",
+      "require": "./dist/packages/shared/index.js",
+      "types": "./dist/packages/shared/index.d.ts"
+    }
+  },
+  "eslintConfig": {
+    "extends": "./packages/standards/eslint/index.js",
+    "ignorePatterns": [
+      "**/*.d.ts",
+      "dist/**/*"
+    ]
+  },
+  "prettier": "@jamtastic/directus/prettier",
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "format": "prettier **/*.ts --write",
+    "lint": "eslint . --ext .ts",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "posttest": "npm run lint",
+    "prelint": "npm run format",
+    "prepack": "npm run build && oclif manifest",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\""
+  },
+  "dependencies": {
+    "@directus/extensions-sdk": "^9.21",
+    "@directus/shared": "^9.21.0",
+    "@oclif/core": "^1.19.1",
+    "@oclif/plugin-help": "^5",
+    "conf": "^10.2.0",
+    "jsonfile": "^6.1.0"
+  },
+  "devDependencies": {
+    "@jamtastic/eslint-config-directus": "^0.9.0",
+    "@oclif/test": "^2.2.10",
+    "@types/chai": "^4",
+    "@types/jsonfile": "^6.1.0",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.18.3",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "chai": "^4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^8.7.1",
+    "eslint": "^7.32.0",
+    "mocha": "^9",
+    "oclif": "^3",
+    "shx": "^0.3",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.3.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.1"
+  },
+  "peerDependencies": {
+    "eslint": ">= 3",
+    "knex": "^2",
+    "prettier": ">= 2",
+    "stylelint": ">= 14",
+    "typescript": ">= 4",
+    "vue": "^3"
+  }
+}
