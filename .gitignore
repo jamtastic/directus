@@ -6,7 +6,6 @@ dist
 # Oclif
 oclif.manifest.json
 tmp
-lib
 .nyc_output
 *-debug.log
 *-error.log
